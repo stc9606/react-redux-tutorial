@@ -14,6 +14,9 @@ let initState = {
     ]
 }
 function reducer(state=initState, action){
+    if(action.type === 'CHANGE_MODE') {
+        return {...state, mode: action.mode};
+    }
 
     return state;
 }
