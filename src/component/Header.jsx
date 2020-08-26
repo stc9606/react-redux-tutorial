@@ -14,11 +14,11 @@ class Header extends Component {
     }
 }
 
-export default connect(null,
+export default connect(null, 
     function(dispatch) {
         return {
             onClcik: function() {
-                dispatch({type:'CHANGE_MODE', mode:'WELCOME'});
+                dispatch({type:'WELCOME', mode:'WELCOME'});
             }            
         }
     }
