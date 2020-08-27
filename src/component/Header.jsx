@@ -17,7 +17,7 @@ class Header extends Component {
 export default connect(null, 
     function(dispatch) {
         return {
-            onClcik: function() {
+            onClick: function() {
                 dispatch({type:'WELCOME', mode:'WELCOME'});
             }            
         }
